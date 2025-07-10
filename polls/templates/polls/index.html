@@ -1,0 +1,15 @@
+{% load static %}
+<!-- Ładowanie pliku CSS ze stylami-->
+<link rel="stylesheet" href="{% static 'polls/style.css' %}"> 
+
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+        <!-- Wyświetlanie tekstu pytania jako link do szczegółów -->
+    {% endfor %}    
+    </ul>
+{% else %}
+    <!-- Komunikat, gdy nie ma żadnych pytań -->
+    <p>No polls are available.</p>
+{% endif %}
