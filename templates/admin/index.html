@@ -1,0 +1,59 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="stylesheet" href="{% static 'admin/css/dashboard.css' %}">
+  <style>
+    .custom-dashboard h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #2c3e50;
+    }
+    .custom-dashboard p {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+    .custom-dashboard ul {
+        list-style: none;
+        padding: 0;
+    }
+    .custom-dashboard li {
+        margin: 10px 0;
+    }
+    .custom-dashboard a {
+        text-decoration: none;
+        background: #3498db;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 6px;
+        display: inline-block;
+        transition: background 0.3s;
+    }
+    .custom-dashboard a:hover {
+        background: #2980b9;
+    }
+    .custom-icon {
+        margin-right: 8px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+<div id="content-main" class="custom-dashboard">
+  <h1>🎯 Panel administratora ankiet</h1>
+  <p>Witaj! Wybierz jedną z poniższych opcji:</p>
+
+  <ul>
+    <li><a href="{% url 'admin:polls_question_changelist' %}">
+      <span class="custom-icon">❓</span>Zarządzaj pytaniami
+    </a></li>
+    <li><a href="/" style="background: #2ecc71;">
+      🏠 Powrót do strony głównej ankiet
+    </a></li>
+  </ul>
+</div>
+{% endblock %}
+
+{% block sidebar %}{{ block.super }}{% endblock %}
+ale to mi zaproponowales

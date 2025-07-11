@@ -21,4 +21,4 @@ class QuestionAdmin(admin.ModelAdmin):
     ordering = ["-pub_date"]
 
 admin.site.register(Question, QuestionAdmin)
-# NIE rejestrujemy już osobno modelu Choice!
+# NIE rejestrujemy już osobno modelu Choice

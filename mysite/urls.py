@@ -16,8 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from mysite import views
+from django.conf import settings
 
 urlpatterns = [
+    path('', views.home, name='home'),
     path("polls/", include("polls.urls")),  # Ten path przekierowuje wszystkie żądania do aplikacji 'polls'
     path('admin/', admin.site.urls), # ten path przekierowuje wszystkie żądania do panelu administracyjnego Django
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += [
+        path("__debug__/", include(debug_toolbar.urls)),
+    ]
