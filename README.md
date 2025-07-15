@@ -71,3 +71,6 @@ Udzielanie odpowiedzi
 
 <img width="1920" height="915" alt="image" src="https://github.com/user-attachments/assets/466c3cdf-7c79-4fe2-8503-4f890d33ff2f" />
 Nadawanie uprawnień urzytkownikom
+
+<img width="1374" height="1037" alt="image" src="https://github.com/user-attachments/assets/727f76ae-d430-4ef0-91df-39531f997872" />
+Wykresy z głosami oddanymi przez użytkowników  
