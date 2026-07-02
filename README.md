@@ -1,21 +1,21 @@
-# 🗳️ Polls_Ankiety_Django
+# Polls_Ankiety_Django
 
 Projekt aplikacji Django do tworzenia i zarządzania ankietami i quizami online. Użytkownicy mogą głosować na przygotowane pytania, a administratorzy mają dostęp do panelu administracyjnego z dostosowanym interfejsem.
 
 ---
 
-## 🔧 Funkcjonalności
+##  Funkcjonalności
 
-- 📝 Głosowanie na pytania i odpowiedzi
-- ✅ Sprawdzanie oddanej odpowiedzi czy jest poprawna
-- 📊 Wyświetlanie wyników w czasie rzeczywistym
-- 🧑‍💼 Panel admina z personalizowanym widokiem
-- 🛠️ Wbudowany **Django Debug Toolbar** (dla deweloperów)
-- 🎨 Widok strony głównej dostępny z panelu admina
+-  Głosowanie na pytania i odpowiedzi
+-  Sprawdzanie oddanej odpowiedzi czy jest poprawna
+-  Wyświetlanie wyników w czasie rzeczywistym
+-  Panel admina z personalizowanym widokiem
+-  Wbudowany **Django Debug Toolbar** (dla deweloperów)
+-  Widok strony głównej dostępny z panelu admina
 
 ---
 
-## 🗂️ Struktura katalogów
+##  Struktura katalogów
 ```
 polls_ankiety_django/
 ├── mysite/ # Konfiguracja projektu Django
@@ -28,7 +28,7 @@ polls_ankiety_django/
 ```
 ---
 
-## ▶️ Jak uruchomić projekt lokalnie
+## Jak uruchomić projekt lokalnie
 
 ```bash
 git clone https://github.com/KarolStachura99/Polls_Ankiety_Django.git
@@ -41,7 +41,7 @@ python manage.py runserver
 
 ---
 
-🛠️ Technologie
+Technologie
 Python 3.x
 
 Django 5.2
@@ -52,14 +52,14 @@ SQLite (domyślnie)
 
 ---
 
-✍️ Autor
+Autor
 Projekt stworzony przez Karol Stachura w ramach nauki Django z oficjalnego tutoriala.
 
 Zainspirowane: https://docs.djangoproject.com/pl/5.2/intro/
 
 ---
 
-📸 Zrzuty ekranu
+Zrzuty ekranu
 <img width="1920" height="913" alt="image" src="https://github.com/user-attachments/assets/21bacfc0-7af8-440b-aa9a-d530e87a7ebd" />
 Dodawanie nowego pytania i odpowiedzi
 
